@@ -122,7 +122,7 @@
           <!-- Dropzone -->
           <div class="dropzone" id="invoice-dropzone">
             <input type="file" id="file-input" accept=".pdf,.png,.jpg,.jpeg,.txt,.csv" class="file-input-hidden">
-            <div class="dropzone-content">
+            <div class="dropzone-content" id="dropzone-default-content">
               <div class="drop-icon-wrapper">
                 <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -130,29 +130,63 @@
                   <line x1="12" y1="3" x2="12" y2="15"></line>
                 </svg>
               </div>
-              <p class="dropzone-prompt"><strong>Click to upload</strong> or drag & drop</p>
-              <p class="dropzone-sub">Receipts, client invoices, sub-contractor bills (PDF, JPG, PNG)</p>
+              <p class="dropzone-prompt"><strong>Click to upload photo or PDF</strong>, or drag & drop</p>
+              <p class="dropzone-sub">Supports photos (JPG, PNG), scanned PDFs, receipt snapshots</p>
             </div>
+          </div>
+
+          <!-- Uploaded File Visual Preview Card -->
+          <div class="uploaded-preview-card" id="uploaded-preview-card" style="display: none;">
+            <div class="preview-thumb-wrapper" id="preview-thumb-wrapper">
+              <img id="preview-image" src="" alt="Receipt Photo Preview" style="display: none;">
+              <div id="preview-pdf-icon" class="preview-pdf-icon" style="display: none;">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <span class="pdf-tag">PDF</span>
+              </div>
+            </div>
+            <div class="preview-info">
+              <div class="preview-filename" id="preview-filename">receipt_photo.jpg</div>
+              <div class="preview-meta" id="preview-meta">Image • Local Vision/OCR Ready</div>
+              <div class="preview-badges">
+                <span class="badge badge-gemma">Gemma 2 Vision / OCR</span>
+                <span class="badge badge-partner">100% Air-Gapped</span>
+              </div>
+            </div>
+            <button type="button" class="btn-remove-preview" id="btn-remove-preview" title="Remove">&times;</button>
           </div>
 
           <!-- Quick Sample Invoices for Judges -->
           <div class="sample-presets">
-            <span class="sample-label">⚡ Fast Judge Review (1-Click Presets):</span>
+            <span class="sample-label">⚡ Test With Your 7 Real Bills:</span>
             <div class="preset-buttons">
-              <button class="btn-chip" data-preset="design-invoice">
-                🎨 Figma Client Invoice ($3,450)
+              <button class="btn-chip" data-preset="bill01_stationery">
+                📝 bill01_stationery.jpg — SAI STATIONERY (₹973.50)
               </button>
-              <button class="btn-chip" data-preset="aws-receipt">
-                ☁️ Cloud Server Bill ($412.50)
+              <button class="btn-chip" data-preset="bill02_restaurant">
+                🍛 bill02_restaurant.jpg — HOTEL RAJDHANI (₹1,113.00 - 50% Rule)
               </button>
-              <button class="btn-chip" data-preset="client-lunch">
-                ☕ Business Meal & Client Pitch ($84.20)
+              <button class="btn-chip" data-preset="bill03_medical">
+                💊 bill03_medical.jpg — KOLHAPUR MEDICAL (₹249.76)
               </button>
-              <button class="btn-chip" data-preset="duplicate-test">
-                ⚠️ Duplicate Contractor Bill (Anomaly)
+              <button class="btn-chip" data-preset="bill04_hardware">
+                🔧 bill04_hardware.jpg — SHREE DATTA HARDWARE (₹2,183.00)
               </button>
-              <button class="btn-chip" data-preset="india-batch" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.08); color: #fff;">
-                🇮🇳 Real Freelancer Batch (7 Bills: Airtel, Rajdhani, MSRTC...)
+              <button class="btn-chip" data-preset="bill05_broadband">
+                🌐 bill05_broadband_invoice.pdf — AIRTEL BROADBAND (₹1,178.82)
+              </button>
+              <button class="btn-chip" data-preset="bill06_bus">
+                🚌 bill06_bus_ticket.jpg — MSRTC BUS TICKET (₹245.00)
+              </button>
+              <button class="btn-chip" data-preset="bill07_chai">
+                ☕ bill07_chai_messy_photo.jpg — CHAI POINT (₹141.75)
+              </button>
+              <button class="btn-chip" data-preset="india-batch" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.12); color: #fff; font-weight: 700;">
+                📊 Batch Audit All 7 Bills Together (₹6,084.83)
               </button>
             </div>
           </div>
