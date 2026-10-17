@@ -2,7 +2,7 @@
 title: "PrivaLedger AI: The 100% Offline Expense & Tax Auditor With Gemma 2 and TabPFN That Keeps Client Financials Private"
 published: false
 tags: devchallenge, hf26challenge, hacktoberfest, opensource
-cover_image: https://raw.githubusercontent.com/username/hacktoberfest-privaledger/main/cover.png
+cover_image: https://raw.githubusercontent.com/sarthaklole/hacktoberfest-challenge-2/main/cover.png
 ai_disclosure_level: some_ai
 ---
 
@@ -51,6 +51,9 @@ I built **PrivaLedger AI** to solve this: an on-device, privacy-first financial 
 
 PrivaLedger AI is delivered as a zero-dependency, ultra-fast web application that runs entirely inside any modern web browser or containerized runtime.
 
+- **GitHub Repository:** [`https://github.com/sarthaklole/hacktoberfest-challenge-2`](https://github.com/sarthaklole/hacktoberfest-challenge-2)
+- **Live GitHub Pages / Demo:** [https://sarthaklole.github.io/hacktoberfest-challenge-2](https://sarthaklole.github.io/hacktoberfest-challenge-2) *(also 1-click deployable via Render / Docker)*
+
 ### 🌐 Live Interactive Workspace Highlights
 - **Drag-and-Drop Ingestion:** Accepts PDF invoices, high-resolution receipt photos (JPG, PNG), camera snapshots, or raw text pastes.
 - **One-Click Real-World Test Presets:** Built-in sample invoices for testing:
@@ -93,12 +96,12 @@ PrivaLedger AI is delivered as a zero-dependency, ultra-fast web application tha
 
 PrivaLedger AI is open-sourced under the permissive MIT License.
 
-- **GitHub Repository:** [`https://github.com/username/privaledger-ai`](https://github.com/username/privaledger-ai)
+- **GitHub Repository:** [`https://github.com/sarthaklole/hacktoberfest-challenge-2`](https://github.com/sarthaklole/hacktoberfest-challenge-2)
 - **Local Quickstart:**
   ```bash
   # Clone the repository
-  git clone https://github.com/username/privaledger-ai.git
-  cd privaledger-ai
+  git clone https://github.com/sarthaklole/hacktoberfest-challenge-2.git
+  cd hacktoberfest-challenge-2
 
   # Run directly with Python HTTP server
   python -m http.server 8080
