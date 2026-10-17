@@ -271,11 +271,9 @@ By leveraging **open-weight models (Gemma 2)** and **open tabular AI (TabPFN)** 
 
 ## My Agent Session
 
-This project was built with the assistance of Google Antigravity IDE (Gemini), utilizing DevRelay to record and curate the pair-programming development process:
+This project was built through pair-programming with **Google Antigravity IDE (powered by Gemini)**.
 
-{% agent_session 2d3ec901-fbb8-4559-9263-dbe1f68802b8 %}
-
-*Direct session link:* [https://devrelay.com/sessions/2d3ec901-fbb8-4559-9263-dbe1f68802b8](https://devrelay.com/sessions/2d3ec901-fbb8-4559-9263-dbe1f68802b8)
+The entire development workflow—from architecting the local air-gap sentinel and integrating Gemma 2 semantic prompt pipelines to wiring Prior Labs TabPFN-3.5 tabular anomaly detection and Dockerizing for Render & DigitalOcean—was conducted as an interactive agentic session. All session commit history and code artifacts are preserved directly in the open-source GitHub repository.
 
 ---
 
@@ -328,8 +326,8 @@ PrivaLedger AI has been engineered to compete for the **Overall Winner ($250 USD
 ### 7. `[best-use-of-a-tech-domain]` Best Use of a .tech Domain
 - **Implementation:** Configured for deployment on a Hacktoberfest partner `.tech` domain (`privaledger.tech`).
 
-### 8. `[best-use-of-entire]` / DevRelay Session
-- **Implementation:** Complete coding session transcript recorded and preserved with DevRelay.
+### 8. Overall Winner ($250 USD)
+- **Implementation:** Built specifically for the Week 2 "Side Hustle" prompt—delivering an open-source AI solution with $0 marginal cost that real freelancers can immediately use and pay for.
 
 ---
 
